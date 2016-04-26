@@ -1,5 +1,5 @@
 # AlanYenSwift
 30 Days of Swift </br>
 
-Reference:
+Reference: </br>
 http://samvlu.com/index.html
