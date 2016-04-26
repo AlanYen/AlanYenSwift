@@ -8,7 +8,7 @@
         <!--Counter-->
         <scene sceneID="zRQ-oR-8Wk">
             <objects>
-                <viewController id="lD8-IE-9uz" customClass="ViewController" customModule="Project_1___Tap_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lD8-IE-9uz" customClass="ViewController" customModule="_1_Tap_Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OjZ-fV-Bp7"/>
                         <viewControllerLayoutGuide type="bottom" id="Zo1-8q-gfB"/>

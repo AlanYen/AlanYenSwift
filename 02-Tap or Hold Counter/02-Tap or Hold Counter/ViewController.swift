@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  01-Tap Counter
+//  02-Tap or Hold Counter
 //
 //  Created by AlanYen on 2016/4/26.
 //  Copyright © 2016年 17Life. All rights reserved.
@@ -17,10 +17,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         curNumber = 0;
         updateNumber()
+        addPanGesture()
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,13 +31,25 @@ class ViewController: UIViewController {
     @IBAction func tapButtonClicked(sender: UIButton) {
         
         curNumber += 1
-        updateNumber()
+        updateNumber();
     }
     
     @IBAction func resetBarButtonItemClicked(sender: UIBarButtonItem) {
         
         curNumber = 0
-        updateNumber()
+        updateNumber();
+    }
+    
+    func addPanGesture() {
+        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePanGesture(_:)))
+        view.addGestureRecognizer(panGesture)
+    }
+    
+    func handlePanGesture(sender:UIPanGestureRecognizer) {
+
+        curNumber += 1
+        updateNumber();
     }
     
     func updateNumber() {
