@@ -69,11 +69,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(textField: UITextField) {
         
-        if ((inputTextField?.text) != nil) {
+        if (inputTextField?.text != nil &&
+            inputTextField?.text!.characters.count > 0) {
             inputValue = Float((inputTextField?.text)!)!
             inputTextField?.text = String(format: "$%.2f", inputValue)
-            updateUI(0.0)
             slider?.enabled = true
         }
+        else {
+            inputValue = 0.0
+            slider?.enabled = false
+        }
+        updateUI(0.0)
+    }
+    
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        
+        if (inputTextField?.text != "") {
+            inputTextField?.text = String(Int(inputValue));
+        }
+        return true
     }
 }
