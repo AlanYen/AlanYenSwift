@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UHb-4d-1vA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_9_Add_Photo_From_Camera_Roll" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JD8-ge-VwC">
+                                <rect key="frame" x="0.0" y="69" width="600" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="qvP-zH-MCn"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MtV-YL-x8m"/>
+                                </connections>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-xF-cq9">
+                                <rect key="frame" x="0.0" y="207" width="600" height="393"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1mN-xF-cq9" secondAttribute="bottom" id="2EN-gL-9Xi"/>
+                            <constraint firstItem="1mN-xF-cq9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2L0-0B-3bQ"/>
+                            <constraint firstAttribute="trailing" secondItem="JD8-ge-VwC" secondAttribute="trailing" id="6Y8-Bx-Lb0"/>
+                            <constraint firstItem="JD8-ge-VwC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZP7-NG-BcL"/>
+                            <constraint firstItem="1mN-xF-cq9" firstAttribute="top" secondItem="JD8-ge-VwC" secondAttribute="bottom" constant="10" id="aeW-aC-44b"/>
+                            <constraint firstItem="JD8-ge-VwC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="dcL-G8-fhG"/>
+                            <constraint firstAttribute="trailing" secondItem="1mN-xF-cq9" secondAttribute="trailing" id="h8Y-6j-oGI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1in-rf-5WT">
+                        <barButtonItem key="rightBarButtonItem" title="Photo" id="1Ep-n7-jA9">
+                            <connections>
+                                <action selector="photoBarButtonClicked:" destination="BYZ-38-t0r" id="x3Y-sZ-Pi2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="1mN-xF-cq9" id="t14-YK-AqK"/>
+                        <outlet property="photoBarButton" destination="1Ep-n7-jA9" id="ODk-Kt-9rF"/>
+                        <outlet property="textView" destination="JD8-ge-VwC" id="8oZ-NU-YYM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WiF-92-dxP">
+            <objects>
+                <navigationController id="UHb-4d-1vA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tie-Vu-Hql">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0cq-sf-Cv9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8g-FY-hVf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="429"/>
+        </scene>
+    </scenes>
+</document>
