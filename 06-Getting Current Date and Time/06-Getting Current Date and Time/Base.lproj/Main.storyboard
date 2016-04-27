@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f6R-Bo-Klo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_6_Getting_Current_Date_and_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Date and Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za8-fZ-pqm">
+                                <rect key="frame" x="200" y="150" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Avd-5U-Jb7"/>
+                                    <constraint firstAttribute="height" constant="50" id="kkN-3E-HAc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqt-uX-016">
+                                <rect key="frame" x="30" y="210" width="540" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TC5-bp-Nrk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPh-Ud-FuE">
+                                <rect key="frame" x="250" y="270" width="100" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4Tf-t9-BZf"/>
+                                    <constraint firstAttribute="height" constant="44" id="iV9-s1-pn0"/>
+                                </constraints>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0W-GP-oPg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Za8-fZ-pqm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8BL-gv-CK0"/>
+                            <constraint firstItem="HPh-Ud-FuE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9rH-1V-nPn"/>
+                            <constraint firstItem="Za8-fZ-pqm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="JfV-1C-Pct"/>
+                            <constraint firstItem="bqt-uX-016" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kw5-Lt-PNU"/>
+                            <constraint firstAttribute="trailing" secondItem="bqt-uX-016" secondAttribute="trailing" constant="30" id="pnE-6B-531"/>
+                            <constraint firstItem="bqt-uX-016" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="shN-Hg-5p6"/>
+                            <constraint firstItem="bqt-uX-016" firstAttribute="top" secondItem="Za8-fZ-pqm" secondAttribute="bottom" constant="10" id="t7B-K3-HY8"/>
+                            <constraint firstItem="HPh-Ud-FuE" firstAttribute="top" secondItem="bqt-uX-016" secondAttribute="bottom" constant="10" id="tR3-zh-sRN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ctC-X1-RSi"/>
+                    <connections>
+                        <outlet property="refreshButton" destination="HPh-Ud-FuE" id="WJB-In-vrD"/>
+                        <outlet property="timeLabel" destination="bqt-uX-016" id="jFh-WN-ZA1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Oi5-Vh-kQ0">
+            <objects>
+                <navigationController id="f6R-Bo-Klo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dkn-Wp-WbI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S0K-yG-7Wo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTQ-BW-yb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="429"/>
+        </scene>
+    </scenes>
+</document>
