@@ -21,6 +21,15 @@ class ViewController: UIViewController {
         
         setup()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2.0 * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            self.collectionView.reloadData()
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,7 +38,7 @@ class ViewController: UIViewController {
     
     func prepareDataSource() {
 
-        for _ in 0...36 {
+        for _ in 0..<8 {
             dataSource.append("https://pmcdeadline2.files.wordpress.com/2014/06/apple-logo.jpg")
         }
     }
@@ -38,14 +47,9 @@ class ViewController: UIViewController {
         
         prepareDataSource()
         
-        let screenWidth = UIScreen.mainScreen().bounds.size.width
-        collectionView.backgroundColor = UIColor.orangeColor()
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
-        layout.itemSize = CGSize(width: screenWidth / 3.0, height: screenWidth / 3.0)
-        layout.minimumInteritemSpacing = 0.0
-        layout.minimumLineSpacing = 0.0
-        collectionView.collectionViewLayout = layout
+        collectionView?.backgroundColor = UIColor.whiteColor()
+        let layout = CustomCollectionViewFlowLayout()
+        collectionView?.collectionViewLayout = layout
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
