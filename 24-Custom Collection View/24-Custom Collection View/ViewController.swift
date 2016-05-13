@@ -29,8 +29,17 @@ class ViewController: UIViewController {
     
     func prepareDataSource() {
 
-        for _ in 0..<8 {
-            dataSource.append("https://pmcdeadline2.files.wordpress.com/2014/06/apple-logo.jpg")
+        for i in 0..<8 {
+            switch i%3 {
+                case 0:
+                    dataSource.append("https://pmcdeadline2.files.wordpress.com/2014/06/apple-logo.jpg")
+                case 1:
+                    dataSource.append("http://www.iconsdb.com/icons/preview/red/apple-xxl.png")
+                case 2:
+                    dataSource.append("https://cdn3.iconfinder.com/data/icons/yummicon-pro/100/002_Apple-512.png")
+                default:
+                    dataSource.append("https://pmcdeadline2.files.wordpress.com/2014/06/apple-logo.jpg")
+            }
         }
     }
     
