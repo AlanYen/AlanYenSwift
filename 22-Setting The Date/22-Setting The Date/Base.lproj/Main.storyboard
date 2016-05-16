@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Na3-ip-y26">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2_Setting_The_Date" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vZ9-tP-xb9">
+                                <rect key="frame" x="20" y="94" width="560" height="300"/>
+                                <date key="date" timeIntervalSinceReferenceDate="485082755.76776099">
+                                    <!--2016-05-16 09:12:35 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgD-cw-D5A">
+                                <rect key="frame" x="250" y="414" width="100" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="rdU-xm-Hfd"/>
+                                    <constraint firstAttribute="width" constant="100" id="ziR-Sk-kLJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Set Date">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setDateButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQE-dE-C0p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vZ9-tP-xb9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7ZY-kc-zz6"/>
+                            <constraint firstItem="fgD-cw-D5A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EMI-4S-xp8"/>
+                            <constraint firstItem="fgD-cw-D5A" firstAttribute="top" secondItem="vZ9-tP-xb9" secondAttribute="bottom" constant="20" id="Upc-pE-Oul"/>
+                            <constraint firstAttribute="trailing" secondItem="vZ9-tP-xb9" secondAttribute="trailing" constant="20" id="Zw8-za-YIK"/>
+                            <constraint firstItem="vZ9-tP-xb9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="lwt-lm-UT1"/>
+                            <constraint firstItem="vZ9-tP-xb9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="xbw-uM-ZUR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ILf-wO-2T8"/>
+                    <connections>
+                        <outlet property="datePicker" destination="vZ9-tP-xb9" id="M0l-fq-8T0"/>
+                        <outlet property="setDateButton" destination="fgD-cw-D5A" id="vCy-EU-qod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8kt-Aj-Hsn">
+            <objects>
+                <navigationController id="Na3-ip-y26" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="97a-CL-wnd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aLd-0B-gFB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWa-gA-Pmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-382" y="429"/>
+        </scene>
+    </scenes>
+</document>
