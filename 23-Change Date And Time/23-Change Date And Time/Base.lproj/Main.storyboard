@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jdE-4U-Tfb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Set date and Time-->
+        <scene sceneID="8ph-XN-S6n">
+            <objects>
+                <viewController storyboardIdentifier="DateTimeViewController" id="XeT-5s-GHf" customClass="DateTimeViewController" customModule="_3_Change_Date_And_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3s-lZ-S20"/>
+                        <viewControllerLayoutGuide type="bottom" id="GxR-Mp-V5O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zcq-Wk-HJi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Y-l3-6oA">
+                                <rect key="frame" x="20" y="275" width="560" height="150"/>
+                                <date key="date" timeIntervalSinceReferenceDate="485082755.76776099">
+                                    <!--2016-05-16 09:12:35 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Lpr-ku-pvE">
+                                <rect key="frame" x="20" y="94" width="560" height="150"/>
+                                <date key="date" timeIntervalSinceReferenceDate="485082755.76776099">
+                                    <!--2016-05-16 09:12:35 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z3Y-l3-6oA" firstAttribute="height" secondItem="Zcq-Wk-HJi" secondAttribute="height" multiplier="1:4" id="0NR-7P-PsV"/>
+                            <constraint firstItem="Z3Y-l3-6oA" firstAttribute="leading" secondItem="Zcq-Wk-HJi" secondAttribute="leading" constant="20" id="3AH-IK-zst"/>
+                            <constraint firstAttribute="trailing" secondItem="Z3Y-l3-6oA" secondAttribute="trailing" constant="20" id="7n3-Gc-PKX"/>
+                            <constraint firstItem="Lpr-ku-pvE" firstAttribute="top" secondItem="y3s-lZ-S20" secondAttribute="bottom" constant="30" id="MDZ-ON-I53"/>
+                            <constraint firstItem="Z3Y-l3-6oA" firstAttribute="top" secondItem="Lpr-ku-pvE" secondAttribute="bottom" constant="31" id="Sw3-VX-URu"/>
+                            <constraint firstItem="Lpr-ku-pvE" firstAttribute="leading" secondItem="Zcq-Wk-HJi" secondAttribute="leading" constant="20" id="n5G-Hp-aMz"/>
+                            <constraint firstItem="Lpr-ku-pvE" firstAttribute="height" secondItem="Zcq-Wk-HJi" secondAttribute="height" multiplier="1:4" id="owt-l0-hpi"/>
+                            <constraint firstAttribute="trailing" secondItem="Lpr-ku-pvE" secondAttribute="trailing" constant="20" id="vDl-ST-SBR"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Set date and Time" id="TXl-ZY-OP8">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CGd-tr-Zj5">
+                            <connections>
+                                <action selector="cancelBarButtonItemClicked:" destination="XeT-5s-GHf" id="uev-A2-D2M"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="th0-XY-1P9">
+                            <connections>
+                                <action selector="doneBarButtonItemClicked:" destination="XeT-5s-GHf" id="Dl2-Vl-gA7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cancelBarButtonItem" destination="CGd-tr-Zj5" id="gFY-fn-FOJ"/>
+                        <outlet property="datePicker" destination="Lpr-ku-pvE" id="mO8-02-SmZ"/>
+                        <outlet property="doneBarButtonItem" destination="th0-XY-1P9" id="LPD-rs-CfP"/>
+                        <outlet property="timePicker" destination="Z3Y-l3-6oA" id="mgE-bf-Ug8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6I-SU-vBa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="1190"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wjj-Vo-RiF">
+            <objects>
+                <navigationController id="efC-qc-KJj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a88-cy-x0r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XeT-5s-GHf" kind="relationship" relationship="rootViewController" id="euZ-iX-Y8l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbH-HB-udj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="1190"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K9W-lr-Uw2">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="DUT-kB-2wU" customClass="ViewController" customModule="_3_Change_Date_And_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n0b-ZX-qGJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bh0-pM-UUo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XMp-mE-sji">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEq-qh-2k3">
+                                <rect key="frame" x="200" y="228" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6vQ-8k-PKH"/>
+                                    <constraint firstAttribute="height" constant="44" id="o00-9U-AoO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Chnage date">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="efC-qc-KJj" kind="presentation" id="3Hj-K7-OQG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hy-5M-1LY">
+                                <rect key="frame" x="20" y="164" width="560" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="iEJ-3I-fUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Hy-5M-1LY" secondAttribute="trailing" constant="20" id="Scm-J7-VOQ"/>
+                            <constraint firstItem="oEq-qh-2k3" firstAttribute="centerX" secondItem="XMp-mE-sji" secondAttribute="centerX" id="eik-6P-FfA"/>
+                            <constraint firstItem="7Hy-5M-1LY" firstAttribute="leading" secondItem="XMp-mE-sji" secondAttribute="leading" constant="20" id="f0z-sl-zc0"/>
+                            <constraint firstItem="oEq-qh-2k3" firstAttribute="top" secondItem="7Hy-5M-1LY" secondAttribute="bottom" constant="20" id="j3P-fc-jvj"/>
+                            <constraint firstItem="7Hy-5M-1LY" firstAttribute="top" secondItem="n0b-ZX-qGJ" secondAttribute="bottom" constant="100" id="wpf-pC-lY7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vDS-mJ-mCd"/>
+                    <connections>
+                        <outlet property="changeDateButton" destination="oEq-qh-2k3" id="Ycf-gB-uoB"/>
+                        <outlet property="dateTimeLabel" destination="7Hy-5M-1LY" id="Xuc-0k-igr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjB-ES-HG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UgJ-Y7-7XH">
+            <objects>
+                <navigationController id="jdE-4U-Tfb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FwR-IR-mKs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DUT-kB-2wU" kind="relationship" relationship="rootViewController" id="d8M-r3-MWv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAo-Qx-IPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-382" y="429"/>
+        </scene>
+    </scenes>
+</document>
