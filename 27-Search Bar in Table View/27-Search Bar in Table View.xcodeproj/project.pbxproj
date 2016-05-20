@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D6F76391CEEE8E700D946DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F76381CEEE8E700D946DA /* AppDelegate.swift */; };
+		2D6F763B1CEEE8E700D946DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F763A1CEEE8E700D946DA /* ViewController.swift */; };
+		2D6F763E1CEEE8E700D946DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F763C1CEEE8E700D946DA /* Main.storyboard */; };
+		2D6F76401CEEE8E700D946DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F763F1CEEE8E700D946DA /* Assets.xcassets */; };
+		2D6F76431CEEE8E700D946DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F76411CEEE8E700D946DA /* LaunchScreen.storyboard */; };
+		2D6F764E1CEEE8E700D946DA /* _7_Search_Bar_in_Table_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F764D1CEEE8E700D946DA /* _7_Search_Bar_in_Table_ViewTests.swift */; };
+		2D6F76591CEEE8E700D946DA /* _7_Search_Bar_in_Table_ViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F76581CEEE8E700D946DA /* _7_Search_Bar_in_Table_ViewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D6F764A1CEEE8E700D946DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D6F762D1CEEE8E700D946DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D6F76341CEEE8E700D946DA;
+			remoteInfo = "27-Search Bar in Table View";
+		};
+		2D6F76551CEEE8E700D946DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D6F762D1CEEE8E700D946DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D6F76341CEEE8E700D946DA;
+			remoteInfo = "27-Search Bar in Table View";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D6F76351CEEE8E700D946DA /* 27-Search Bar in Table View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "27-Search Bar in Table View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6F76381CEEE8E700D946DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D6F763A1CEEE8E700D946DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D6F763D1CEEE8E700D946DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D6F763F1CEEE8E700D946DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D6F76421CEEE8E700D946DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D6F76441CEEE8E700D946DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D6F76491CEEE8E700D946DA /* 27-Search Bar in Table ViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "27-Search Bar in Table ViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6F764D1CEEE8E700D946DA /* _7_Search_Bar_in_Table_ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _7_Search_Bar_in_Table_ViewTests.swift; sourceTree = "<group>"; };
+		2D6F764F1CEEE8E700D946DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D6F76541CEEE8E700D946DA /* 27-Search Bar in Table ViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "27-Search Bar in Table ViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6F76581CEEE8E700D946DA /* _7_Search_Bar_in_Table_ViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _7_Search_Bar_in_Table_ViewUITests.swift; sourceTree = "<group>"; };
+		2D6F765A1CEEE8E700D946DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D6F76321CEEE8E700D946DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6F76461CEEE8E700D946DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6F76511CEEE8E700D946DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D6F762C1CEEE8E700D946DA = {
+			isa = PBXGroup;
+			children = (
+				2D6F76371CEEE8E700D946DA /* 27-Search Bar in Table View */,
+				2D6F764C1CEEE8E700D946DA /* 27-Search Bar in Table ViewTests */,
+				2D6F76571CEEE8E700D946DA /* 27-Search Bar in Table ViewUITests */,
+				2D6F76361CEEE8E700D946DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D6F76361CEEE8E700D946DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D6F76351CEEE8E700D946DA /* 27-Search Bar in Table View.app */,
+				2D6F76491CEEE8E700D946DA /* 27-Search Bar in Table ViewTests.xctest */,
+				2D6F76541CEEE8E700D946DA /* 27-Search Bar in Table ViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D6F76371CEEE8E700D946DA /* 27-Search Bar in Table View */ = {
+			isa = PBXGroup;
+			children = (
+				2D6F76381CEEE8E700D946DA /* AppDelegate.swift */,
+				2D6F763A1CEEE8E700D946DA /* ViewController.swift */,
+				2D6F763C1CEEE8E700D946DA /* Main.storyboard */,
+				2D6F763F1CEEE8E700D946DA /* Assets.xcassets */,
+				2D6F76411CEEE8E700D946DA /* LaunchScreen.storyboard */,
+				2D6F76441CEEE8E700D946DA /* Info.plist */,
+			);
+			path = "27-Search Bar in Table View";
+			sourceTree = "<group>";
+		};
+		2D6F764C1CEEE8E700D946DA /* 27-Search Bar in Table ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D6F764D1CEEE8E700D946DA /* _7_Search_Bar_in_Table_ViewTests.swift */,
+				2D6F764F1CEEE8E700D946DA /* Info.plist */,
+			);
+			path = "27-Search Bar in Table ViewTests";
+			sourceTree = "<group>";
+		};
+		2D6F76571CEEE8E700D946DA /* 27-Search Bar in Table ViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D6F76581CEEE8E700D946DA /* _7_Search_Bar_in_Table_ViewUITests.swift */,
+				2D6F765A1CEEE8E700D946DA /* Info.plist */,
+			);
+			path = "27-Search Bar in Table ViewUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D6F76341CEEE8E700D946DA /* 27-Search Bar in Table View */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D6F765D1CEEE8E700D946DA /* Build configuration list for PBXNativeTarget "27-Search Bar in Table View" */;
+			buildPhases = (
+				2D6F76311CEEE8E700D946DA /* Sources */,
+				2D6F76321CEEE8E700D946DA /* Frameworks */,
+				2D6F76331CEEE8E700D946DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "27-Search Bar in Table View";
+			productName = "27-Search Bar in Table View";
+			productReference = 2D6F76351CEEE8E700D946DA /* 27-Search Bar in Table View.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D6F76481CEEE8E700D946DA /* 27-Search Bar in Table ViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D6F76601CEEE8E700D946DA /* Build configuration list for PBXNativeTarget "27-Search Bar in Table ViewTests" */;
+			buildPhases = (
+				2D6F76451CEEE8E700D946DA /* Sources */,
+				2D6F76461CEEE8E700D946DA /* Frameworks */,
+				2D6F76471CEEE8E700D946DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D6F764B1CEEE8E700D946DA /* PBXTargetDependency */,
+			);
+			name = "27-Search Bar in Table ViewTests";
+			productName = "27-Search Bar in Table ViewTests";
+			productReference = 2D6F76491CEEE8E700D946DA /* 27-Search Bar in Table ViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D6F76531CEEE8E700D946DA /* 27-Search Bar in Table ViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D6F76631CEEE8E700D946DA /* Build configuration list for PBXNativeTarget "27-Search Bar in Table ViewUITests" */;
+			buildPhases = (
+				2D6F76501CEEE8E700D946DA /* Sources */,
+				2D6F76511CEEE8E700D946DA /* Frameworks */,
+				2D6F76521CEEE8E700D946DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D6F76561CEEE8E700D946DA /* PBXTargetDependency */,
+			);
+			name = "27-Search Bar in Table ViewUITests";
+			productName = "27-Search Bar in Table ViewUITests";
+			productReference = 2D6F76541CEEE8E700D946DA /* 27-Search Bar in Table ViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D6F762D1CEEE8E700D946DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = 17Life;
+				TargetAttributes = {
+					2D6F76341CEEE8E700D946DA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					2D6F76481CEEE8E700D946DA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 2D6F76341CEEE8E700D946DA;
+					};
+					2D6F76531CEEE8E700D946DA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 2D6F76341CEEE8E700D946DA;
+					};
+				};
+			};
+			buildConfigurationList = 2D6F76301CEEE8E700D946DA /* Build configuration list for PBXProject "27-Search Bar in Table View" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D6F762C1CEEE8E700D946DA;
+			productRefGroup = 2D6F76361CEEE8E700D946DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D6F76341CEEE8E700D946DA /* 27-Search Bar in Table View */,
+				2D6F76481CEEE8E700D946DA /* 27-Search Bar in Table ViewTests */,
+				2D6F76531CEEE8E700D946DA /* 27-Search Bar in Table ViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D6F76331CEEE8E700D946DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6F76431CEEE8E700D946DA /* LaunchScreen.storyboard in Resources */,
+				2D6F76401CEEE8E700D946DA /* Assets.xcassets in Resources */,
+				2D6F763E1CEEE8E700D946DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6F76471CEEE8E700D946DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6F76521CEEE8E700D946DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D6F76311CEEE8E700D946DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6F763B1CEEE8E700D946DA /* ViewController.swift in Sources */,
+				2D6F76391CEEE8E700D946DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6F76451CEEE8E700D946DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6F764E1CEEE8E700D946DA /* _7_Search_Bar_in_Table_ViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6F76501CEEE8E700D946DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6F76591CEEE8E700D946DA /* _7_Search_Bar_in_Table_ViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D6F764B1CEEE8E700D946DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D6F76341CEEE8E700D946DA /* 27-Search Bar in Table View */;
+			targetProxy = 2D6F764A1CEEE8E700D946DA /* PBXContainerItemProxy */;
+		};
+		2D6F76561CEEE8E700D946DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D6F76341CEEE8E700D946DA /* 27-Search Bar in Table View */;
+			targetProxy = 2D6F76551CEEE8E700D946DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D6F763C1CEEE8E700D946DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D6F763D1CEEE8E700D946DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D6F76411CEEE8E700D946DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D6F76421CEEE8E700D946DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D6F765B1CEEE8E700D946DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D6F765C1CEEE8E700D946DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D6F765E1CEEE8E700D946DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "27-Search Bar in Table View/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-7Life.-7-Search-Bar-in-Table-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D6F765F1CEEE8E700D946DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "27-Search Bar in Table View/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-7Life.-7-Search-Bar-in-Table-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2D6F76611CEEE8E700D946DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "27-Search Bar in Table ViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-7Life.-7-Search-Bar-in-Table-ViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/27-Search Bar in Table View.app/27-Search Bar in Table View";
+			};
+			name = Debug;
+		};
+		2D6F76621CEEE8E700D946DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "27-Search Bar in Table ViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-7Life.-7-Search-Bar-in-Table-ViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/27-Search Bar in Table View.app/27-Search Bar in Table View";
+			};
+			name = Release;
+		};
+		2D6F76641CEEE8E700D946DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "27-Search Bar in Table ViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-7Life.-7-Search-Bar-in-Table-ViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "27-Search Bar in Table View";
+			};
+			name = Debug;
+		};
+		2D6F76651CEEE8E700D946DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "27-Search Bar in Table ViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-7Life.-7-Search-Bar-in-Table-ViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "27-Search Bar in Table View";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D6F76301CEEE8E700D946DA /* Build configuration list for PBXProject "27-Search Bar in Table View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6F765B1CEEE8E700D946DA /* Debug */,
+				2D6F765C1CEEE8E700D946DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D6F765D1CEEE8E700D946DA /* Build configuration list for PBXNativeTarget "27-Search Bar in Table View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6F765E1CEEE8E700D946DA /* Debug */,
+				2D6F765F1CEEE8E700D946DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2D6F76601CEEE8E700D946DA /* Build configuration list for PBXNativeTarget "27-Search Bar in Table ViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6F76611CEEE8E700D946DA /* Debug */,
+				2D6F76621CEEE8E700D946DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2D6F76631CEEE8E700D946DA /* Build configuration list for PBXNativeTarget "27-Search Bar in Table ViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6F76641CEEE8E700D946DA /* Debug */,
+				2D6F76651CEEE8E700D946DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D6F762D1CEEE8E700D946DA /* Project object */;
+}
