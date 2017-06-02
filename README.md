@@ -1,5 +1,5 @@
 # AlanYenSwift
-10 Days of Swift </br>
+100 Days of Swift </br>
 
 Reference: </br>
 http://samvlu.com/index.html
